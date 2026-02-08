@@ -53,7 +53,7 @@ Optional (cookbook pattern):
 
 ```bash
 cd /path/to/8020-skills
-git remote add origin https://github.com/YOUR_USERNAME/8020-skills.git
+git remote add origin https://github.com/8020admin/skills.git
 git push -u origin main
 ```
 
@@ -61,8 +61,8 @@ git push -u origin main
 
 ```bash
 # Clone somewhere you’ll keep it (e.g. ~/Dev or 8020 Projects)
-git clone https://github.com/YOUR_USERNAME/8020-skills.git
-cd 8020-skills
+git clone https://github.com/8020admin/skills.git
+cd skills
 
 # Make the script executable and run it (creates symlinks in ~/.cursor/skills/)
 chmod +x scripts/link-to-cursor.sh
