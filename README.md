@@ -16,7 +16,9 @@ Skills are organized packages of instructions (and optional scripts/resources) t
 
 ```
 8020-skills/
-├── blog-structure-creator/    # Blog CMS (Categories, Tags, Authors, Blog Posts)
+├── blog-structure-creator/         # Blog CMS via Webflow MCP
+│   └── SKILL.md
+├── blog-structure-creator-api/     # Blog CMS via Webflow Data API v2
 │   └── SKILL.md
 ├── scripts/
 │   └── link-to-cursor.sh     # Symlink skills into ~/.cursor/skills/
@@ -30,6 +32,7 @@ Skills are organized packages of instructions (and optional scripts/resources) t
 | Skill | Description |
 |-------|-------------|
 | **blog-structure-creator** | Create complete blog CMS structure in Webflow: Blog Posts, Categories, Tags, Authors. Includes SEO fields, taxonomies, and proper field relationships. Use when setting up blog infrastructure. |
+| **blog-structure-creator-api** | Same blog CMS structure as blog-structure-creator but using the Webflow Data API v2 (REST) instead of MCP. Use when the user wants to create blog CMS structure on a Webflow project via the API, or when MCP is unavailable. |
 
 ## Skill Format
 
@@ -97,7 +100,7 @@ To remove only the skills that came from this repo (leave other Cursor skills al
 
 ```bash
 CURSOR_SKILLS=~/.cursor/skills
-for name in blog-structure-creator; do rm -f "$CURSOR_SKILLS/$name"; done
+for name in blog-structure-creator blog-structure-creator-api; do rm -f "$CURSOR_SKILLS/$name"; done
 ```
 
 Add any other skill names from this repo as you add them.
